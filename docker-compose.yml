@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  api.weather.dev:
+    container_name: api.weather.dev
+    build:
+      context: ./
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
