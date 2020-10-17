@@ -5,7 +5,7 @@ WORKDIR /build
 COPY pom.xml .
 RUN mvn dependency:go-offline
 
-COPY src /build/src
+COPY src src
 RUN mvn package
 
 # Release
